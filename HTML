@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML area Tag</title>
+   </head>
+  <style>
+
+
+@keyframes biggerTitle {from {}
+            to {font-size: 35px;}}
+
+body{
+    background-image: url('https://i.gifer.com/NvL.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+
+    position: relative;
+
+    
+} 
+
+#image{
+
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-40%);
+
+          
+   
+}
+
+
+#titleBox {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%,50%);
+   padding: 0%;
+   background-color:black;
+   width: 15%;
+   height: 50px;
+   text-align: center;
+   font-size: 30px;
+   font-family: sans-serif;
+   font-style: italic;
+   color: green;
+   animation-name: biggerTitle;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   } 
+
+
+   
+  </style>
+
+
+
+
+   <body>
+      <div id="image"><img src="pill.jpg"  alt = "usemap" usemap = "#choosePill"/>></div>
+      <map name = "choosePill">
+         <area shape = "poly" coords = "159,219,158,243,187,202,216,196,222,216, 160,217,161,242,186,243,700,466,212,195,222,215"
+            href = "2realword.html" alt = "test" target = "_blank" />
+         <area shape = "poly" coords = "510,227,514,252,540,228,527,222,525,466,568,251,550,270,544,233,529,266,529,224,519,246,554,236,547,267" alt = "Matrix test"
+             href = "2realword.html" target = "_blank" />
+             <div id="titleBox">Velg en pille</div>
+        
+      
+         
+
+
+</div>
+
+
+             
+      </map>
+   </body>
+</html>
